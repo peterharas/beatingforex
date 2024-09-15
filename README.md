@@ -1,6 +1,8 @@
 # Beating Forex
 
-A project investigating whether two STEM students can match J.P. Morgan's 2023 state-of-the-art financial time series forecasting capabilities. Spoiler: we got close, our models **beat the market with an accuracy of 54%**! [Jump to the results](#results)
+A project investigating whether two STEM students can match J.P. Morgan's 2023 state-of-the-art financial time series forecasting capabilities. Spoiler: we got close, our models **beat the market with an accuracy of 54%**! 
+
+[Jump to the results](#results)
 
 ## Chasing J.P. Morgan
 
@@ -69,6 +71,7 @@ A trading strategy maximizing returns could be developed based on the observatio
 Got interested? Feel free to add us on LinkedIn or to reach out to us by e-mail!
 
 Peter:
+
 [Mail](mailto:peter.haraszti@protonmail.com)
 [LinkedIn](https://www.linkedin.com/in/peter-haraszti-476a03325/)
 
