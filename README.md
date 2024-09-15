@@ -23,7 +23,7 @@ We implemented two working models: the **CNN and Transformer based Time Series M
 
 ### CTTS
 
-A convolutional neural network (CNN, often used in computer vision) acts as the initial part of the CTTS architecture. It captures various patterns of the 80-minute input time series and creates tokens carrying those patterns for the architecture's next building block, the Transformer Encoder (yes, the same architecture also used in ChatGPT). To learn the long-term dependencies between the tokens, the same positional embedding is used as in Vaswani et al.'s 2017 [Attention Is All You Need](https://arxiv.org/abs/1706.03762) paper. The Transformer encoder learns the best possible representation (latent embedding vector) of the time series that is then passed to the final building block, a Multilayer Perceptron, that performs the classification and outputs the probability of the currency's price going up. 
+A convolutional neural network (CNN, often used in computer vision) acts as the initial part of the CTTS architecture. It captures various patterns of the 80-minute input time series and creates tokens carrying those patterns for the architecture's next building block, the Transformer Encoder (yes, the same architecture also used in ChatGPT). To learn the long-term dependencies between the tokens, the same positional embedding is used as in Vaswani et al.'s 2017 [Attention Is All You Need](https://arxiv.org/abs/1706.03762) paper. The Transformer encoder learns the best possible representation (latent embedding vector) of the time series that is then passed to the final building block, a Multilayer Perceptron (MLP), that performs the classification and outputs the probability of the currency's price going up. 
 
 Further technical details:
 - The CNN has 5 channels: High, Low, Open, Close, Volume
@@ -34,7 +34,7 @@ Further technical details:
 
 ### CLSTM
 
-
+While developing the CTTS model we also experimented with incorporating an LSTM in the architecture. The outputs of the CNN are fed into an LSTM, the MLP head is replaced with a single fully connected layer. This modified architecture performed comparably to the original CTTS architecture. 
 
 ## Results
 <a name="results"></a>
