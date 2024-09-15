@@ -47,6 +47,12 @@ While we did not succeed in matching the performance figures of J.P. Morgan's AI
 | CLSTM           | Forex           | 54.215%         |
 | J.P. Morgan     | S&P 500 stocks  | 56.7%           |
 
+![CTTS Loss](/assets/ctts_loss.png)
+
+![CLSTM Loss](/assets/clstm_loss.png)
+
+![CTTS Violin](/assets/ctts_violin.png)
+
 
 ## What's next
 tbd
