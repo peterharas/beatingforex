@@ -10,7 +10,7 @@ The idea for the project was born when we stumbled upon the 2023 paper [Financia
 
 It is difficult to find high-quality and minute-resolution data on stock prices for free. Data on Forex (foreign currency exchange) currency pair prices however is broady available from sources such as the [Dukascopy Swiss Banking Group](https://www.dukascopy.com/swiss/english/marketwatch/historical/). Further reasons for focusing on Forex are its high liquidity and 24-hour trading on business days. We used 19 currency pairs (EUR or USD was always part of a pair) and 1 year's worth of minute-resolution data. Predictions are made based on 80-minute time windows, the model outputs whether the price will go up or down in the 90th minute. The open, close, low, and high prices as well as the volume are considered during training and in each prediction. 
 
-Technical details:
+Further technical details:
 - Train/validation/test split: 75%/12.5%/12.5%
 - Data preprocessing:
   - Removal of holidays and weekends
@@ -18,7 +18,23 @@ Technical details:
   - Undersampling is used to fix class imbalance  
 
 ## The models
-tbd
+
+We implemented two working models: the **CNN and Transformer based Time Series Model** (referenced as CTTS) and a variation of it that involves a **Long short-term memory** (referenced as CLSTM).
+
+### CTTS
+
+A convolutional neural network (CNN, often used in computer vision) acts as the initial part of the CTTS architecture. It captures various patterns of the 80-minute input time series and creates tokens carrying those patterns for the architecture's next building block, the Transformer Encoder (yes, the same architecture also used in ChatGPT). To learn the long-term dependencies between the tokens, the same positional embedding is used as in Vaswani et al.'s 2017 [Attention Is All You Need](https://arxiv.org/abs/1706.03762) paper. The Transformer encoder learns the best possible representation (latent embedding vector) of the time series that is then passed to the final building block, a Multilayer Perceptron, that performs the classification and outputs the probability of the currency's price going up. 
+
+Further technical details:
+- The CNN has 5 channels: High, Low, Open, Close, Volume
+- 128 different patterns are captured by the CNN for each token
+- Patterns are analyzed for 16-minute windows (the result of CNN kernel size 16 and stride 8)
+- Transformer parameters: depth 4, 4 self-attention heads, embedding dimension 128, drop rate 0.3
+- Optimizer: AdamW
+
+### CLSTM
+
+
 
 ## Results
 <a name="results"></a>
