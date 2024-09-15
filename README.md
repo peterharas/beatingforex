@@ -38,7 +38,15 @@ While developing the CTTS model we also experimented with incorporating an LSTM 
 
 ## Results
 <a name="results"></a>
-tbd
+
+While we did not succeed in matching the performance figures of J.P. Morgan's AI research team, both our algorithms are capable of beating the market and would perform better than randomly placing bets. The table below shows the achieved (test) accuracies:
+
+| --------------- | --------------- | --------------- |  
+| **Algorithm**   | **Data**        | **Accuracy**    |
+| CTTS            | Forex           | 53.997%         |
+| CLSTM           | Forex           | 54.215%         |
+| J.P. Morgan     | S&P 500 stocks  | 56.7%.          |
+
 
 ## What's next
 tbd
