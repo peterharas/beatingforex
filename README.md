@@ -1,6 +1,6 @@
 # Beating Forex
 
-A project investigating whether two STEM students can match J.P. Morgan's 2023 state-of-the-art financial time series forecasting capabilities. Spoiler: we got close, our models beat the market with an accuracy of 54%! [Jump to the results](#results)
+A project investigating whether two STEM students can match J.P. Morgan's 2023 state-of-the-art financial time series forecasting capabilities. Spoiler: we got close, our models **beat the market with an accuracy of 54%**! [Jump to the results](#results)
 
 ## Chasing J.P. Morgan
 
@@ -61,7 +61,16 @@ While predicting, the models return the probability of the price of a currency g
 
 
 ## What's next
-tbd
+
+A trading strategy maximizing returns could be developed based on the observation that the accuracy increases with higher model confidence. Instead of only classifying whether the price goes up or down (buy or sell), ternary classification could be implemented with a third option: hold. Once that is implemented, simulations that also consider the bid-ask spread could be run on more data to evaluate whether the models are already capable of generating revenue. 
 
 ## Contact us
-tbd
+
+Got interested? Feel free to add us on LinkedIn or to reach out to us by e-mail!
+
+Peter:
+[Mail](mailto:peter.haraszti@protonmail.com)
+[LinkedIn](https://www.linkedin.com/in/peter-haraszti-476a03325/)
+
+Eugenio: TBD
+
