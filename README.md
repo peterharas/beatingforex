@@ -1,6 +1,6 @@
 # Beating Forex
 
-A project investigating whether two STEM students can match J.P. Morgan's 2023 state-of-the-art financial time series forecasting capabilities. Spoiler: we got close! [Jump to the results](#results)
+A project investigating whether two STEM students can match J.P. Morgan's 2023 state-of-the-art financial time series forecasting capabilities. Spoiler: we got close, our models beat the market with an accuracy of 54%! [Jump to the results](#results)
 
 ## Chasing J.P. Morgan
 
@@ -47,9 +47,15 @@ While we did not succeed in matching the performance figures of J.P. Morgan's AI
 | CLSTM           | Forex           | 54.215%         |
 | J.P. Morgan     | S&P 500 stocks  | 56.7%           |
 
+Looking at the loss curves proves that the model learned actual patterns and is not overfitting to the noise in the training data. Initially, the training and validation loss decrease jointly, once the model learns everything there is to learn from the data the validation loss begins to stagnate. The red line is the loss of a model that would randomly guess "up" or "down", both models outperform that baseline after a few epochs.
+
+CTTS loss curves:
 ![CTTS Loss](/assets/ctts_loss.png)
 
+CLSTM loss curves:
 ![CLSTM Loss](/assets/clstm_loss.png)
+
+While predicting, the models return the probability of the price of a currency going up based on an observed period. The plot below shows the distribution of the predictions for the CTTS model. The further away a prediction is from the 0.5 mark, the more confident the model is about the veracity of its claim. When only considering the observations where the model is 75% sure about its prediction, the accuracy of the prediction increases to even **69.23%**. 
 
 ![CTTS Violin](/assets/ctts_violin.png)
 
