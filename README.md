@@ -75,5 +75,8 @@ Peter:
 [Mail](mailto:peter.haraszti@protonmail.com)
 [LinkedIn](https://www.linkedin.com/in/peter-haraszti-476a03325/)
 
-Eugenio: TBD
+Eugenio: 
+
+[Mail](mailto:eugenio.cainelli@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/eugenio-cainelli)
 
