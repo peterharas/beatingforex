@@ -10,7 +10,7 @@ The idea for the project was born when we stumbled upon the 2023 paper [Financia
 
 ## Stock data vs Forex data
 
-It is difficult to find high-quality and minute-resolution data on stock prices for free. Data on Forex (foreign currency exchange) currency pair prices however is broady available from sources such as the [Dukascopy Swiss Banking Group](https://www.dukascopy.com/swiss/english/marketwatch/historical/). Further reasons for focusing on Forex are its high liquidity and 24-hour trading on business days. We used 19 currency pairs (EUR or USD was always part of a pair) and 1 year's worth of minute-resolution data. Predictions are made based on 80-minute time windows, the model outputs whether the price will go up or down in the 90th minute. The open, close, low, and high prices as well as the volume are considered during training and in each prediction. 
+It is difficult to find high-quality and minute-resolution data on stock prices for free. Data on Forex (foreign currency exchange) currency pair prices however is broadly available from sources such as the [Dukascopy Swiss Banking Group](https://www.dukascopy.com/swiss/english/marketwatch/historical/). Further reasons for focusing on Forex are its high liquidity and 24-hour trading on business days. We used 19 currency pairs (EUR or USD was always part of a pair) and 1 year's worth of minute-resolution data. Predictions are made based on 80-minute time windows, the model outputs whether the price will go up or down in the 90th minute. The open, close, low, and high prices as well as the volume are considered during training and in each prediction. 
 
 Further technical details:
 - Train/validation/test split: 75%/12.5%/12.5%
@@ -71,12 +71,10 @@ A trading strategy maximizing returns could be developed based on the observatio
 Got interested? Feel free to add us on LinkedIn or to reach out to us by e-mail!
 
 Peter:
-
 [Mail](mailto:peter.haraszti@protonmail.com)
 [LinkedIn](https://www.linkedin.com/in/peter-haraszti-476a03325/)
 
 Eugenio: 
-
 [Mail](mailto:eugenio.cainelli@gmail.com)
 [LinkedIn](https://www.linkedin.com/in/eugenio-cainelli)
 
