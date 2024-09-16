@@ -68,13 +68,11 @@ A trading strategy maximizing returns could be developed based on the observatio
 
 ## Contact us
 
-Got interested? Feel free to add us on LinkedIn or to reach out to us by e-mail!
+Got interested? Feel free to add us on LinkedIn!
 
 Eugenio: 
-[Mail](mailto:eugenio.cainelli@gmail.com) - 
 [LinkedIn](https://www.linkedin.com/in/eugenio-cainelli)
 
 Peter:
-[Mail](mailto:peter.haraszti@protonmail.com) - 
 [LinkedIn](https://www.linkedin.com/in/peter-haraszti-476a03325/)
 
